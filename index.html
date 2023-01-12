@@ -56,16 +56,7 @@
                     <a class="btn btn-primary btn-lg" href="#" target="_blank" role="button" data-i18n="jumbotron.learnButton">Learn more</a>
                 </p>
                 <hr class="my-4">
-                <!-- PopDocs.net-Horizontal -->
-<ins class="adsbygoogle"
-style="display:block"
-data-ad-client="ca-pub-9236847887178276"
-data-ad-slot="3124098039"
-data-ad-format="auto"
-data-full-width-responsive="true"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+                
             </div>
         </app-nav>
 
@@ -87,6 +78,11 @@ data-full-width-responsive="true"></ins>
                     <p data-i18n="markdownTips.learnMore">
 
                     </p>
+
+                    <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'playgrounds'" :class="[tab == 'playgrounds' ? 'active' : '', '']" data-i18n="navbar.playgrounds">Playgrounds</a>
+                    <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'certifications'" :class="[tab == 'certifications' ? 'active' : '', '']" data-i18n="navbar.others">Certifications</a>
+
+                </nav>
                 </div>
                 
                 <nav class="nav nav-pills nav-justified">
@@ -770,7 +766,7 @@ data-full-width-responsive="true"></ins>
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                             
-                            <h5 class="card-title" data-i18n="code.title">👨‍💻 Code</h5>
+                            <h5 class="card-title" data-i18n="code.title">👨‍💻 Copy your Code</h5>
                             <button class="btn btn-primary mb-2 d-flex" @click="copyCode">
                                 <svg style="width: 1.5rem; height: 1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg> &nbsp;
                                 <span data-i18n="code.copyButton">Copy</span>
