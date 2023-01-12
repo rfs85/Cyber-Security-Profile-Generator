@@ -82,8 +82,8 @@
                         <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'playgrounds'" :class="[tab == 'playgrounds' ? 'active' : '', '']" data-i18n="navbar.playgrounds">Playgrounds</a>
                         <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'certifications'" :class="[tab == 'certifications' ? 'active' : '', '']" data-i18n="navbar.certifications">Certifications</a>
                     </nav>
-                    <div v-show="tab == 'header'" class="tab">
-                        <h3 data-i18n="header.title">Playgrounds</h3>
+                    <div v-show="tab == 'playgrounds'" class="tab">
+                        <h3 data-i18n="playgrounds.title">Playgrounds</h3>
     
                         <div class="form-group">
                             <label data-i18n="header.playgrounds">HackTheBox</label>
