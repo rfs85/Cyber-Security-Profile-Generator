@@ -92,8 +92,8 @@ data-full-width-responsive="true"></ins>
                     <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'header'" :class="[tab == 'header' ? 'active' : '', '']" data-i18n="navbar.header">Header</a>
                     <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'additional'" :class="[tab == 'additional' ? 'active' : '', '']" data-i18n="navbar.additional">Additional</a>
                     <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'social'" :class="[tab == 'social' ? 'active' : '', '']" data-i18n="navbar.spocial">Social</a>
-                    <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'stats'" :class="[tab == 'stats' ? 'active' : '', '']" data-i18n="navbar.others">Playgrouns</a>
-                    <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'stats'" :class="[tab == 'stats' ? 'active' : '', '']" data-i18n="navbar.others">Certifications</a>
+                    <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'stats'" :class="[tab == 'stats' ? 'active' : '', '']" data-i18n="navbar.playgrounds">Playgrouns</a>
+                    <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'stats'" :class="[tab == 'stats' ? 'active' : '', '']" data-i18n="navbar.certifications">Certifications</a>
                     <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'stats'" :class="[tab == 'stats' ? 'active' : '', '']" data-i18n="navbar.others">GitHub</a>
                 </nav>
 
@@ -585,6 +585,62 @@ data-full-width-responsive="true"></ins>
                             </div>
                         </div>
                     </div>
+
+
+                    <div v-show="tab == 'playgrounds'" class="tab">
+                        <h3 data-i18n="playgrounds.title">Header</h3>
+    
+                        <div class="form-group">
+                            <label data-i18n="playgrounds.heading">Heading</label>
+                            <input
+                                type="text"
+                                v-model="data.title"
+                                data-i18n="playgrounds.headingPlaceholder playgrounds.heading"
+                                data-i18n-attr="placeholder aria-label"
+                                placeholder="Enter text..."
+                                class="form-control"
+                                aria-label="Heading"
+                            />
+                        </div>
+    
+                        <div class="form-group">
+                            <label data-i18n="playgrounds.subtitle">Subtitle</label>
+                            <input
+                                type="text"
+                                v-model="data.subtitle"
+                                data-i18n="playgrounds.subtitlePlaceholder playgrounds.subtitle"
+                                data-i18n-attr="placeholder aria-label"
+                                placeholder="Enter text..."
+                                class="form-control"
+                                aria-label="Subtitle"
+                            />
+                        </div>
+    
+                        <div class="form-group">
+                            <label data-i18n="playgrounds.aboutMe">About me</label>
+                            <textarea
+                                v-model="data.text"
+                                data-i18n="playgrounds.aboutMePlaceholder playgrounds.aboutMe"
+                                data-i18n-attr="placeholder aria-label"
+                                placeholder="Enter text.."
+                                class="form-control"
+                                aria-label="About me"
+                            >{{data.text}}</textarea>
+                        </div>
+    
+                        <div class="form-group">
+                            <label data-i18n="playgrounds.skills">Skills</label>
+                            <input
+                                type="text"
+                                v-model="data.skills"
+                                data-i18n="playgrounds.skillsPlaceholder playgrounds.skills"
+                                data-i18n-attr="placeholder aria-label"
+                                placeholder="Enter skills..."
+                                class="form-control"
+                                aria-label="Skills"
+                            />
+                        </div>
+
 
                     <div v-bind:class="[data.github ? 'social-stats active' : 'social-stats disabled']">
                         <h3 data-i18n="statistics.title">Statistics</h3>
