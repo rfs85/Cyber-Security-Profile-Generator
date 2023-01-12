@@ -78,19 +78,34 @@
                     <p data-i18n="markdownTips.learnMore">
 
                     </p>
+                    <nav class="nav nav-pills nav-justified">    
+                        <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'playgrounds'" :class="[tab == 'playgrounds' ? 'active' : '', '']" data-i18n="navbar.playgrounds">Playgrounds</a>
+                        <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'certifications'" :class="[tab == 'certifications' ? 'active' : '', '']" data-i18n="navbar.others">Certifications</a>
+                    </nav>
+                    <div v-show="tab == 'header'" class="tab">
+                        <h3 data-i18n="header.title">Header</h3>
+    
+                        <div class="form-group">
+                            <label data-i18n="header.playgrounds">Playgrounds</label>
+                            <input
+                                type="text"
+                                v-model="data.title"
+                                data-i18n="header.playgroundsPlaceholder header.playgrounds"
+                                data-i18n-attr="placeholder aria-label"
+                                placeholder="Enter text..."
+                                class="form-control"
+                                aria-label="Playgrounds"
+                            />
+                        </div>
+    
 
-                    <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'playgrounds'" :class="[tab == 'playgrounds' ? 'active' : '', '']" data-i18n="navbar.playgrounds">Playgrounds</a>
-                    <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'certifications'" :class="[tab == 'certifications' ? 'active' : '', '']" data-i18n="navbar.others">Certifications</a>
-
-                </nav>
+                    </div>
                 </div>
                 
                 <nav class="nav nav-pills nav-justified">
                     <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'header'" :class="[tab == 'header' ? 'active' : '', '']" data-i18n="navbar.header">Header</a>
                     <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'additional'" :class="[tab == 'additional' ? 'active' : '', '']" data-i18n="navbar.additional">Additional</a>
                     <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'social'" :class="[tab == 'social' ? 'active' : '', '']" data-i18n="navbar.spocial">Social</a>
-                    <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'playgrounds'" :class="[tab == 'playgrounds' ? 'active' : '', '']" data-i18n="navbar.playgrounds">Playgrounds</a>
-                    <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'certifications'" :class="[tab == 'certifications' ? 'active' : '', '']" data-i18n="navbar.others">Certifications</a>
                     <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'stats'" :class="[tab == 'stats' ? 'active' : '', '']" data-i18n="navbar.others">GitHub</a>
                 </nav>
 
