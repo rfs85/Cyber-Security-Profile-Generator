@@ -92,13 +92,24 @@
                                 v-model="data.title"
                                 data-i18n="header.playgroundsPlaceholder header.playgrounds"
                                 data-i18n-attr="placeholder aria-label"
-                                placeholder="Enter text..."
+                                placeholder="Enter username..."
                                 class="form-control"
                                 aria-label="Playgrounds"
                             />
                         </div>
     
-
+                        <div class="form-group">
+                            <label data-i18n="header.playgrounds">TryHackMe</label>
+                            <input
+                                type="text"
+                                v-model="data.title"
+                                data-i18n="header.playgroundsPlaceholder header.playgrounds"
+                                data-i18n-attr="placeholder aria-label"
+                                placeholder="Enter username..."
+                                class="form-control"
+                                aria-label="Playgrounds"
+                            />
+                        </div>
                     </div>
 
                     <div v-show="tab == 'certifications'" class="tab">
