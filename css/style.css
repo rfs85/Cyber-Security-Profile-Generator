@@ -26,9 +26,7 @@ label {
     margin-bottom: 20px; }
 
 
-body {
-  background-color: #263143;
-}
+
     
 footer {
   background-color: #263143;
@@ -47,6 +45,11 @@ footer p {
 /*# sourceMappingURL=style.css.map */
 
 /*RFS*/
+
+body {
+  background-color: #263143;
+}
+
 p {
 
   color: #9fef00!important;

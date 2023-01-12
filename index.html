@@ -100,6 +100,83 @@
     
 
                     </div>
+
+                    <div v-show="tab == 'certifications'" class="tab">
+                        <h3 data-i18n="certifications.title">Social Profiles</h3>
+    
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">                        
+                                <div class="form-group">
+                                    <div class="certifications-title">
+                                        <brand-logo brand="github"></brand-logo>
+                                        <label data-i18n="certifications.github">GitHub</label>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        v-model="data.github"
+                                        data-i18n="certifications.githubPlaceholder certifications.github"
+                                        data-i18n-attr="placeholder aria-label"
+                                        placeholder="Enter your username..."
+                                        class="form-control"
+                                        aria-label="Github"
+                                    />
+                                </div>
+                            </div>
+    
+                         
+    
+                            <div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <div class="social-title">
+                                        <brand-logo brand="twitter"></brand-logo>
+                                        <label data-i18n="social.twitter">Twitter</label>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        v-model="data.twitter"
+                                        data-i18n="social.twitterPlaceholder social.twitter"
+                                        data-i18n-attr="placeholder aria-label"
+                                        placeholder="Enter your username..."
+                                        class="form-control"
+                                        aria-label="Twitter"
+                                    />
+                                </div>
+                            </div>
+    
+                            <div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <div class="certifications-title">
+                                        <brand-logo brand="codepen"></brand-logo>
+                                        <label data-i18n="certifications.codepen">Codepen</label>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        v-model="data.codepen"
+                                        data-i18n="certifications.codepenPlaceholder certifications.codepen"
+                                        data-i18n-attr="placeholder aria-label"
+                                        placeholder="Enter your username..."
+                                        class="form-control"
+                                        aria-label="codepen"
+                                    />
+                                </div>
+                            </div>
+                            
+
+                            <div class="col-xs-12 col-md-12">
+                                <button @click="addItem" class="btn btn-primary" data-i18n="social.addButton">Add more</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
                 </div>
                 
                 <nav class="nav nav-pills nav-justified">
