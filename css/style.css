@@ -24,12 +24,12 @@ label {
     margin-bottom: 20px; }
 
 
-    body {
-      background-color: #1d3b2c;
-    }
-
+body {
+  background-color: #1d3b2c;
+}
+    
 footer {
-  background-color: rgb(255, 13, 13);
+  background-color: #2f2dbd;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 20px;
