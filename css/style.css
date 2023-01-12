@@ -23,6 +23,11 @@ label {
     text-transform: uppercase;
     margin-bottom: 20px; }
 
+
+    body {
+      background-color: #1d3b2c;
+    }
+
 footer {
   background-color: rgb(255, 13, 13);
   text-align: center;
