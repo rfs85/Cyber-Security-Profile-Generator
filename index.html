@@ -283,6 +283,15 @@
                         />
                     </div>
                     <div class="col-xs-12 col-md-6">
+                        <div>Selected: {{ selected }}</div>
+
+<select v-model="selected">
+  <option disabled value="">Please select one</option>
+  <option>A</option>
+  <option>B</option>
+  <option>C</option>
+</select>
+
                         <div class="custom-control custom-checkbox mb-2">
                             <input type="checkbox" class="custom-control-input" id="customCheck4" v-model="data.languages" :disabled="!data.github">
                             <label
