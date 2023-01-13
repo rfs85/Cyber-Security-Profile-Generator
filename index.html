@@ -96,18 +96,6 @@
 
         <app-view class="row">
             <app-content class="col-xs-12 col-md-12">
-                <p data-i18n="markdownTips.title">Markdown Tips:</p>
-                <a href="https://app.hackthebox.com/profile/227362"><img class="" src="https://www.hackthebox.eu/badge/image/227362" alt="HackTheBox Stats"/></a>
-                <a href="https://tryhackme.com/p/RFS"><img class="" src="https://tryhackme-badges.s3.amazonaws.com/RFS.png" alt="HackTheBox Stats"/></a>
-                
-               
-            </app-content>
-
-        </app-view>
-
-
-        <app-view class="row">
-            <app-content class="col-xs-12 col-md-12">
                 <!-- AdSense AD 01 -->
                 <ins class="adsbygoogle"
                 style="display:block"
@@ -160,11 +148,38 @@
                         />
                     </div>
                 </div>
-             
+                <div v-show="tab == 'certifications'" class="tab">
+                    <h3 data-i18n="playgrounds.title">Playgrounds</h3>
+
+                    <div class="form-group .p-playgrounds">
+                        <label data-i18n="header.playgrounds">Offensive Security</label>
+                        <input
+                            type="text"
+                            v-model="data.title"
+                            data-i18n="header.playgroundsPlaceholder header.playgrounds"
+                            data-i18n-attr="placeholder aria-label"
+                            placeholder="Enter username..."
+                            class="form-control"
+                            aria-label="Playgrounds"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label data-i18n="header.playgrounds">ELearningSecurity</label>
+                        <input
+                            type="text"
+                            v-model="data.title"
+                            data-i18n="header.playgroundsPlaceholder header.playgrounds"
+                            data-i18n-attr="placeholder aria-label"
+                            placeholder="Enter username..."
+                            class="form-control"
+                            aria-label="Playgrounds"
+                        />
+                    </div>
+                </div>
                
             </app-content>
 
-        </app-view>
         <app-view class="row">
            
             <app-content class="col-xs-12 col-md-6">
@@ -183,9 +198,61 @@
                     <p data-i18n="markdownTips.learnMore">
 
                     </p>
-                    
+                    <nav class="nav nav-pills nav-justified">    
+                        <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'playgrounds'" :class="[tab == 'playgrounds' ? 'active' : '', '']" data-i18n="navbar.playgrounds">Playgrounds</a>
+                        <a class="nav-item nav-link" href="#" onclick="return false;" @click="tab = 'certifications'" :class="[tab == 'certifications' ? 'active' : '', '']" data-i18n="navbar.certifications">Certifications</a>
+                    </nav>
+                    <div v-show="tab == 'playgrounds'" class="tab">
+                        <h3 data-i18n="playgrounds.title">Playgrounds</h3>
+    
+                        <div class="form-group .p-playgrounds">
+                            <label data-i18n="header.playgrounds">HackTheBox</label>
+                            <input
+                                type="text"
+                                v-model="data.title"
+                                data-i18n="header.playgroundsPlaceholder header.playgrounds"
+                                data-i18n-attr="placeholder aria-label"
+                                placeholder="Enter username..."
+                                class="form-control"
+                                aria-label="Playgrounds"
+                            />
+                        </div>
+    
+                        <div class="form-group">
+                            <label data-i18n="header.playgrounds">TryHackMe</label>
+                            <input
+                                type="text"
+                                v-model="data.title"
+                                data-i18n="header.playgroundsPlaceholder header.playgrounds"
+                                data-i18n-attr="placeholder aria-label"
+                                placeholder="Enter username..."
+                                class="form-control"
+                                aria-label="Playgrounds"
+                            />
+                        </div>
+                    </div>
 
-                  
+                    <div v-show="tab == 'certifications'" class="tab">
+                        <h3 data-i18n="certifications.title">Social Profiles</h3>
+    
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">                        
+                                <div class="form-group">
+                                    <div class="certifications-title">
+                                        <brand-logo brand="github"></brand-logo>
+                                        <label data-i18n="certifications.github">GitHub</label>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        v-model="data.github"
+                                        data-i18n="certifications.githubPlaceholder certifications.github"
+                                        data-i18n-attr="placeholder aria-label"
+                                        placeholder="Enter your username..."
+                                        class="form-control"
+                                        aria-label="Github"
+                                    />
+                                </div>
+                            </div>
     
                          
     
