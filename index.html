@@ -139,10 +139,10 @@
                 </nav>
 
                 <div v-show="tab == 'playgrounds'" class="tab">
-                    <h3 data-i18n="playgrounds.title">Playgrounds</h3>
+                    <h3 class="h3-playgrounds" data-i18n="playgrounds.title">Playgrounds</h3>
 
                     <div class="form-group .p-playgrounds">
-                        <label data-i18n="header.playgrounds">HackTheBox</label>
+                        <label class="h3-playgrounds" data-i18n="header.playgrounds">HackTheBox</label>
                         <input
                             type="text"
                             v-model="data.title"
@@ -155,7 +155,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label data-i18n="header.playgrounds">TryHackMe</label>
+                        <label class="h3-playgrounds" data-i18n="header.playgrounds">TryHackMe</label>
                         <input
                             type="text"
                             v-model="data.title"
