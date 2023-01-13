@@ -115,7 +115,7 @@ new Vue({
 
         this.translator = new Translator({
             persist: false,
-            languages: ["en", "es"],
+            languages: ["en", "es","pt"],
             defaultLanguage: "en",
             detectLanguage: true,
             filesLocation: "i18n"
