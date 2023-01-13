@@ -115,6 +115,20 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center">
                            <p>RFS Data</p> 
+                           <h3 class="h3-playgrounds" data-i18n="header.title">Header</h3>
+
+                           <div class="form-group">
+                               <label data-i18n="header.heading">Heading</label>
+                               <input
+                                   type="text"
+                                   v-model="data.title"
+                                   data-i18n="header.headingPlaceholder header.heading"
+                                   data-i18n-attr="placeholder aria-label"
+                                   placeholder="Enter text..."
+                                   class="form-control"
+                                   aria-label="Heading"
+                               />
+                           </div>
                            
                         </div>
                        
