@@ -44,7 +44,7 @@ new Vue({
                 subtitle: "Cyber Security Profile Generator!",
                 text: "I made this project just for fun, it allows you to create nice and simple GitHub Readme files that you can copy/paste and use in your profile.",
 
-                banner: "https://arturssmirnovs.github.io/github-profile-readme-generator/images/banner.png",
+                banner: "https://avatars.githubusercontent.com/u/97369519?v=4",
 
                 skills: "Re Team / Pentester",
 
