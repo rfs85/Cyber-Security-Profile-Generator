@@ -229,7 +229,7 @@
                 </nav>
 
                 <div v-show="tab == 'header'" class="tab">
-                    <h3 data-i18n="header.title">Header</h3>
+                    <h3 class="h3-playgrounds" data-i18n="header.title">Header</h3>
 
                     <div class="form-group">
                         <label data-i18n="header.heading">Heading</label>
@@ -283,30 +283,30 @@
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="custom-control custom-checkbox mb-2">
-                            <input type="checkbox" class="custom-control-input" id="customCheck3" v-model="data.languages" :disabled="!data.github">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4" v-model="data.languages" :disabled="!data.github">
                             <label
                                     class="custom-control-label"
-                                    for="customCheck3"
+                                    for="customCheck4"
                                     data-i18n="statistics.showLanguages"
                             >Ethical Hacking</label>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="custom-control custom-checkbox mb-2">
-                            <input type="checkbox" class="custom-control-input" id="customCheck3" v-model="data.languages" :disabled="!data.github">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5" v-model="data.languages" :disabled="!data.github">
                             <label
                                     class="custom-control-label"
-                                    for="customCheck3"
+                                    for="customCheck5"
                                     data-i18n="statistics.showLanguages"
                             >Web Hacking</label>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="custom-control custom-checkbox mb-2">
-                            <input type="checkbox" class="custom-control-input" id="customCheck3" v-model="data.languages" :disabled="!data.github">
+                            <input type="checkbox" class="custom-control-input" id="customCheck6" v-model="data.languages" :disabled="!data.github">
                             <label
                                     class="custom-control-label"
-                                    for="customCheck3"
+                                    for="customCheck6"
                                     data-i18n="statistics.showLanguages"
                             >Network Hacking</label>
                         </div>
@@ -951,36 +951,7 @@
 
             </app-content>
 
-            <app-sidebar class="col-xs-12 col-md-6 mt-3">
-
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title" data-i18n="preview">Preview</h5>
-                        <vue-markdown :source="source"></vue-markdown>
-                    </div>
-                </div>
-
-                <div class="card mb-4">
-                   
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            
-                            <h5 class="card-title" data-i18n="code.title">👨‍💻 Copy your Code</h5>
-                            <button class="btn btn-primary mb-2 d-flex" @click="copyCode">
-                                <svg style="width: 1.5rem; height: 1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg> &nbsp;
-                                <span data-i18n="code.copyButton">Copy</span>
-                            </button>
-                        </div>
-                        <div class="alert alert-danger" role="alert" v-if="forced" data-i18n="warning">
-                            Changing source manually could result in lost of data if you use generation fields again.
-                        </div>
-                        <!-- TODO: Highlight the textarea as markdown code -->
-                        <textarea v-model="source" @keyup="onKeyUp" class="form-control" ref="code">{{ source }}</textarea>
-                    </div>
-                    
-                </div>
-
-            </app-sidebar>
+        
 
             <!-- Ezoic - bottom_of_page - bottom_of_page -->
 <div id="ezoic-pub-ad-placeholder-102"> </div>
