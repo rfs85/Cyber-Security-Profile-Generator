@@ -46,7 +46,7 @@ new Vue({
 
                 banner: "https://arturssmirnovs.github.io/github-profile-readme-generator/images/banner.png",
 
-                skills: "VUE JS / REACT / JS / HTML / CSS",
+                skills: "Re Team / Pentester",
 
                 working: "this page.",
                 learning: "",

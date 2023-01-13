@@ -1,16 +1,16 @@
 {
     "offsec": "Offensive Security",
     "offsec-certifications": {
-        "OSCP": "PT GitHub Profile Readme Generator",
-        "OSED": "Super simple GitHub profile Readme generator made with Vue.js, that allows you to create beautiful Readme files that you can copy/paste in your profile.",
-        "OWSP": "What is a GitHub profile Readme? Check out the repository to learn more.",
+        "OSCP": "Offensive Security Certified Professional",
+        "OSMR": "Super simple GitHub profile Readme generator made with Vue.js, that allows you to create beautiful Readme files that you can copy/paste in your profile.",
+        "OSWA": "What is a GitHub profile Readme? Check out the repository to learn more.",
         "OSTH": "Learn more"
     },
     "INE": "GitHub Profile Readme Generator - by @arturssmirnovs",
     "ine-certifications": {
-        "title": "PT GitHub Profile Readme Generator",
-        "description": "Super simple GitHub profile Readme generator made with Vue.js, that allows you to create beautiful Readme files that you can copy/paste in your profile.",
-        "callToAction": "What is a GitHub profile Readme? Check out the repository to learn more.",
+        "eJPT": "PT GitHub Profile Readme Generator",
+        "eCPPT": "Super simple GitHub profile Readme generator made with Vue.js, that allows you to create beautiful Readme files that you can copy/paste in your profile.",
+        "eCPPWT": "What is a GitHub profile Readme? Check out the repository to learn more.",
         "learnButton": "Learn more"
     },
     "menus": {
