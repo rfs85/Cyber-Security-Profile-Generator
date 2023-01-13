@@ -96,10 +96,7 @@
                         <input class="custom-control-input" type="radio" id="languageEn" value="en" v-model="data.language" v-on:change="switchLanguage" aria-label="English Selector" checked>
                         <label class="custom-control-label" for="languageEn">English</label>
                     </div>
-                    <div class="custom-control custom-radio">
-                        <input class="custom-control-input" type="radio" id="languageEs" value="es" v-model="data.language" v-on:change="switchLanguage" aria-label="Spanish Selector">
-                        <label class="custom-control-label" for="languageEs">Spanish</label>
-                    </div>
+
                     <div class="custom-control custom-radio">
                         <input class="custom-control-input" type="radio" id="languagePt" value="pt" v-model="data.language" v-on:change="switchLanguage" aria-label="Portuguese Selector">
                         <label class="custom-control-label" for="languagePt">Portuguese</label>
@@ -284,7 +281,36 @@
                             aria-label="Skills"
                         />
                     </div>
-
+                    <div class="col-xs-12 col-md-6">
+                        <div class="custom-control custom-checkbox mb-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3" v-model="data.languages" :disabled="!data.github">
+                            <label
+                                    class="custom-control-label"
+                                    for="customCheck3"
+                                    data-i18n="statistics.showLanguages"
+                            >Ethical Hacking</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="custom-control custom-checkbox mb-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3" v-model="data.languages" :disabled="!data.github">
+                            <label
+                                    class="custom-control-label"
+                                    for="customCheck3"
+                                    data-i18n="statistics.showLanguages"
+                            >Web Hacking</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="custom-control custom-checkbox mb-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3" v-model="data.languages" :disabled="!data.github">
+                            <label
+                                    class="custom-control-label"
+                                    for="customCheck3"
+                                    data-i18n="statistics.showLanguages"
+                            >Network Hacking</label>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label data-i18n="header.bannerUrl">Banner URL</label>
                         <input
