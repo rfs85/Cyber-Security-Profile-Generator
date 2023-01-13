@@ -286,6 +286,9 @@ new Vue({
                 if (data.website) {
                     source += `[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/icloud.svg' alt='website' height='40'>](${data.website})  `;
                 }
+                if (data.htb) {
+                    source += `[<img src='https://app.hackthebox.com/profile/227362' alt='Reddit' height='40'>]https://www.hackthebox.eu/badge/image/${data.htb})  `;
+                }
 
                 for (index = 0; index < data.items.length; ++index) {
                     if (data.items[index].icon && data.items[index].value) {
